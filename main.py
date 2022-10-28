@@ -14,11 +14,11 @@ import exo2_phantom_2064_mission as exo2
 import exo3_task_gestion as exo3
 import exo4_supernovae as exo4
 import exo5_meteorite_attack as exo5
-import unit_tests.utils as tests
 
 import random
 import time
 import string
+import os
 
 
 def main():
@@ -71,7 +71,7 @@ def main():
                 easter_egg()
 
             elif choice == "*":
-                tests.main()
+                os.system("python -m unittest discover ./unit_tests")
 
             else:
                 print("Choix invalide !")
