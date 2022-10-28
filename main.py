@@ -72,6 +72,7 @@ def main():
 
             elif choice == "*":
                 os.system("python -m unittest discover ./unit_tests")
+                print(2 * "\n")
 
             else:
                 print("Choix invalide !")
